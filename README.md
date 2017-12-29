@@ -7,3 +7,6 @@ Every year I am a lil bit smarter and I use those smarts to make a new portfolio
 - dynamically generating pages using javascript
 - increasing discoverability by suggesting similar projects
 - possibly tracking which projects the user has already viewed in this session?
+
+Some more conceptual goals include:
+- emphasize that I design solutions, not just games, comics, or graphics
