@@ -1,0 +1,36 @@
+/*Styles for biosite2018*/
+
+body {
+    font-family: "Helvetica", sans-serif;
+}
+
+header {
+    margin-bottom: 2em;
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+}
+
+header h1, h2, ul, li {
+    display: inline-block;
+    margin: 1em;
+}
+
+header h1 {
+    background-color: salmon;
+    padding: .35em;
+    color: white;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+footer {
+    background-color: aquamarine;
+}
+
+.selected {
+    border-bottom: .5em salmon solid;
+}
