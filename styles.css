@@ -5,26 +5,45 @@ body {
 }
 
 header {
-    margin-bottom: 2em;
     width: 100%;
     max-width: 1000px;
     display: block;
     margin: auto;
+    margin-bottom: 2em;
 }
 
-header h1, h2, ul, li {
+header h2, ul, li {
     display: inline-block;
     margin: 1em;
 }
 
+header a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 header h1 {
+    display: inline-block;
     background-color: salmon;
     padding: .35em;
     color: white;
 }
 
+header h2 {
+    padding-bottom: .2em;
+}
+
 header ul {
     list-style-type: none;
+}
+
+header li {
+    margin-bottom: .45em;
+    padding: .45em;
+}
+
+header a:hover li {
+    border-bottom: 8px salmon solid;
 }
 
 footer {
@@ -32,5 +51,13 @@ footer {
 }
 
 .selected {
-    border-bottom: .5em salmon solid;
+    border-bottom: 8px salmon solid;
+}
+
+.content {
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+    margin-bottom: 2em;
 }
