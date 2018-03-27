@@ -1,15 +1,37 @@
 /*Styles for biosite2018*/
 
+* {
+    padding:0;
+    margin:0;
+}
+
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
+    position: relative;
+    padding-bottom: 10rem;
+    min-height: 100%;
     font-family: "Helvetica", sans-serif;
 }
 
 header {
     width: 100%;
-    max-width: 1000px;
+    max-width: fit-content;
     display: block;
     margin: auto;
     margin-bottom: 2em;
+    margin-top: -.5em;
+
 }
 
 header h2, ul, li {
@@ -24,8 +46,9 @@ header a {
 
 header h1 {
     display: inline-block;
-    background-color: salmon;
+    background-color: #FF6476;
     padding: .35em;
+    padding-top: .5em;
     color: white;
 }
 
@@ -38,28 +61,72 @@ header ul {
 }
 
 header li {
-    font-size: 1.25em;
+    font-size: 1.15em;
     margin-bottom: .25em;
-    padding: .25em;
+    padding-bottom: .4em;
 }
 
 header a:hover li {
-    border-bottom: 8px salmon solid;
+    border-bottom: 8px #FF6476 solid;
 }
 
-footer {
-    background-color: #E0E0E0;
+figcaption {
+    font-style: italic;
+    font-size: .75em;
     text-align: right;
 }
 
+/*borrowed from chris bracco https://chrisbracco.com/css-sticky-footer-effect/*/
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    margin-top: 10em;
+    font-size: .75em;
+}
+
 .selected {
-    border-bottom: 8px salmon solid;
+    border-bottom: 8px #FF6476 solid;
 }
 
 .content {
-    width: 100%;
-    max-width: 1000px;
+    max-width: 95%;
+    width: 800px;
     display: block;
     margin: auto;
-    margin-bottom: 2em;
 }
+
+#intro {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    max-width: 850px;
+    align-items: flex-start;
+}
+
+#intro * {
+    display: block;
+    margin: auto;
+    width: 375px;
+    padding: .25em;
+    max-width: 100%;
+}
+
+
+
+/*#intro img {
+    float: left;
+    width: 50%;
+}
+
+#intro div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+}*/
