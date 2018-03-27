@@ -30,7 +30,7 @@ header {
     display: block;
     margin: auto;
     margin-bottom: 2em;
-
+    color: #707070;
 }
 
 header h2, ul, li {
@@ -73,6 +73,7 @@ figcaption {
     font-style: italic;
     font-size: .75em;
     text-align: right;
+    color: #707070;
 }
 
 /*borrowed from chris bracco https://chrisbracco.com/css-sticky-footer-effect/*/
@@ -85,6 +86,7 @@ footer {
     background-color: #efefef;
     text-align: center;
     font-size: .75em;
+    color: #707070;
 }
 
 .selected {
