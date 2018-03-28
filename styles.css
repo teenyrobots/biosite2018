@@ -62,7 +62,7 @@ header ul {
 header li {
     font-size: 1.15em;
     margin-bottom: .25em;
-    padding-bottom: .4em;
+    padding-bottom: .41em;
 }
 
 header a:hover li {
@@ -95,18 +95,22 @@ footer {
 
 .content {
     max-width: 95%;
-    width: 800px;
-    display: block;
+    width: 1000px;
+    display: flex;
     margin: auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.content h1 {
+    display: none;
+    margin: auto;
+    font-style: italic;
 }
 
 #intro {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
     width: 100%;
     max-width: 850px;
-    align-items: flex-start;
 }
 
 #intro * {
@@ -117,16 +121,27 @@ footer {
     max-width: 100%;
 }
 
-
-
-/*#intro img {
-    float: left;
-    width: 50%;
+.projectThumb {
+    display: block;
+    margin: 1em auto;
+    width: 450px;
+    position: relative;
 }
 
-#intro div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 500px;
-}*/
+.projectThumb img {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.projectThumb h2 {
+    position: absolute;
+}
+
+
+.projectThumb h3 {
+    font-weight: 100;
+    font-style: italic;
+    position: absolute;
+    right: .25em;
+    top: .3em;
+}
