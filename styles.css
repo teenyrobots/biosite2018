@@ -3,6 +3,7 @@
 * {
     padding:0;
     margin:0;
+    font-family: 400 'Muli', sans-serif;
 }
 
 
@@ -49,10 +50,12 @@ header h1 {
     padding: .35em;
     padding-top: .75em;
     color: white;
+    font-weight: 600;
 }
 
 header h2 {
     padding-bottom: .2em;
+    font-weight:600;
 }
 
 header ul {
@@ -127,6 +130,7 @@ section {
     margin: auto;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .project h1 {
@@ -135,31 +139,42 @@ section {
     margin-top: -2em;
     font-size: 3em;
     text-transform: capitalize;
+    font-weight:600;
+    width: 100%;
 }
 
 .project h2 {
-    font-weight:100;
+    font-weight:200;
     font-style: italic;
-    width: 100%;
     padding-bottom: 1em;
     text-transform: capitalize;
+    width: 100%;
 }
 
 .project h3 {
     font-weight: 400;
     font-size: 1em;
+    font-style: italic;
+    width: 100%;
+    padding: .1em;
 }
 
-.project h4 {
-    font-weight: 100;
-    text-transform: uppercase;
-    font-style: italic;
-    font-size: .75em;
-    letter-spacing: .05em;
+.project h3:last-of-type {
+    padding-bottom: 1em;
 }
+
+/*.project h4 {*/
+    /*font-weight: 200;*/
+    /*text-transform: uppercase;*/
+    /*font-style: italic;*/
+    /*font-size: .75em;*/
+    /*letter-spacing: .05em;*/
+    /*padding-bottom: .5em;*/
+    /*text-align: center;*/
+/*}*/
 
 .project p {
-    padding: 1em 0;
+    padding: .5em 0;
 }
 
 .hero {
@@ -175,14 +190,15 @@ section {
 .thumbs {
     display: flex;
     flex-wrap: wrap;
-    width: 95%;
-    max-width: 500px;
+    justify-content: center;
+    width: 500px;
+    max-width: 100%;
+    padding-top: 7em;
 }
 
 .thumbs img {
-    padding: 0 1em 1em 0;
-    width: 235px;
-    height: 200px;
+    width: 250px;
+    padding: .5em;
 }
 
 #intro {
@@ -216,9 +232,15 @@ section {
 
 
 .projectThumb h3 {
-    font-weight: 100;
+    font-weight: 200;
     font-style: italic;
     position: absolute;
     right: .25em;
     top: .3em;
+}
+
+@media only screen and (max-width: 1052px) {
+    .thumbs {
+        padding-top: 1em;
+    }
 }
