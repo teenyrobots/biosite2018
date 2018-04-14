@@ -111,6 +111,12 @@ section {
     margin: auto;
     align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content img {
+    padding-right: 1em;
+    margin-bottom: 1em;
 }
 
 .content h1 {
@@ -121,6 +127,10 @@ section {
 
 .content hr{
     width: 100%;
+}
+
+#intro h1 {
+    text-align: left;
 }
 
 .project {
@@ -163,19 +173,9 @@ section {
     padding-bottom: 1em;
 }
 
-/*.project h4 {*/
-    /*font-weight: 200;*/
-    /*text-transform: uppercase;*/
-    /*font-style: italic;*/
-    /*font-size: .75em;*/
-    /*letter-spacing: .05em;*/
-    /*padding-bottom: .5em;*/
-    /*text-align: center;*/
+/*.project p {*/
+    /*padding: .5em 0;*/
 /*}*/
-
-.project p {
-    padding: .5em 0;
-}
 
 .hero {
     width: 100%;
@@ -184,7 +184,11 @@ section {
 .copy {
     width: 500px;
     max-width: 95%;
-    padding-right: 20px;
+    padding-right: 1em;
+}
+
+.copy p {
+    padding: .5em 0;
 }
 
 .thumbs {
@@ -237,6 +241,11 @@ section {
     position: absolute;
     right: .25em;
     top: .3em;
+}
+
+.biopic {
+    width: 350px;
+    padding-top: .5em;
 }
 
 @media only screen and (max-width: 1052px) {
