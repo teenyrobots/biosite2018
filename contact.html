@@ -33,7 +33,25 @@
         <!--THAT'S IT FOR THE HEADER-->
 
         <div class="content">
-            <h1>hi</h1>
+            <img src="assets/error.jpg" width="350px">
+            <div class="copy">
+                <h1>hi</h1>
+                <p>to reach out, u have many avenues. You can an email to joycer at teenyrobots dot net, you can say hi on twitter, or you can use the form below to shoot me a message.</p>
+                <form action="https://formspree.io/joycer@teenyrobots.net"
+                      method="POST">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="_replyto" id="email">
+                    </div>
+                    <textarea name="message" placeholder="Let's work together!"></textarea>
+                    <input type="submit" value="Send">
+                    <input type="hidden" name="_next" value="/contactThanks.html" />
+                </form>
+            </div>
         </div>
     </body>
 </html>

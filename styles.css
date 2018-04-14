@@ -105,13 +105,14 @@ section {
 }
 
 .content {
-    max-width: 95%;
-    width: 1000px;
+    width: 95%;
+    max-width: 1000px;
     display: flex;
     margin: auto;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
+    /*background-color: red;*/
 }
 
 .content img {
@@ -122,7 +123,6 @@ section {
 .content h1 {
     width: 100%;
     margin: auto;
-    text-align: center;
 }
 
 .content hr{
@@ -227,11 +227,14 @@ section {
 
 .projectThumb img {
     width: 100%;
+    margin: auto;
     margin-top: 2em;
+    padding: .5em;
 }
 
 .projectThumb h2 {
     position: absolute;
+    left: .25em;
 }
 
 
@@ -239,12 +242,12 @@ section {
     font-weight: 200;
     font-style: italic;
     position: absolute;
-    right: .25em;
+    right: .5em;
     top: .3em;
 }
 
 .biopic {
-    width: 350px;
+    width: 300px;
     padding-top: .5em;
 }
 
