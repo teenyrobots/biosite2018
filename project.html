@@ -5,6 +5,8 @@
     <meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" />
     <title>Joyce Rice is a product designer</title>
     <link rel="stylesheet" text="css" href="styles.css">
+    <link href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -37,7 +39,7 @@
 <img src="projects/slug/hero.jpg" class="hero">
 <div class="project">
     <h1>Project Name</h1>
-    <h2>type of thing</h2>
+    <h2>newsgame</h2>
     <div class="copy">
         <h3>Date: 1/1/199</h3>
         <h3>Client: AU Game Lab</h3>
@@ -46,14 +48,20 @@
         <p>Quisque orci sapien, faucibus at fringilla non, porta rhoncus elit. Fusce tempus ut est venenatis condimentum. Quisque nec tortor felis. Pellentesque ut sem nulla. Nunc viverra ex quam, a convallis leo imperdiet quis. Pellentesque viverra orci tortor, sed pretium tortor feugiat non. Vivamus volutpat est eleifend sodales imperdiet. Pellentesque quis ipsum nulla. Fusce dictum vestibulum enim. Donec in semper quam. Vivamus efficitur pellentesque enim eu tincidunt. Praesent in ullamcorper mauris. Nunc in nisi id leo mollis convallis at nec ex.</p>
         <p>Sed non sem ac arcu eleifend ornare. Proin tincidunt purus orci, vel condimentum eros eleifend at. Cras faucibus venenatis turpis non viverra. Curabitur vulputate eget mi vitae rutrum. In libero est, eleifend efficitur purus vitae, tempor imperdiet leo. Duis metus lectus, placerat nec tellus nec, congue mattis sem. Nulla sagittis ligula tortor. Integer consequat est sit amet turpis tincidunt, et venenatis nisl tempus. Sed non convallis sem, quis finibus tellus. Sed varius risus nec congue varius. Praesent dapibus mauris sed justo hendrerit consectetur. Vivamus vitae volutpat mi. Phasellus at tempus lorem. Sed consectetur viverra dolor, ac facilisis diam bibendum lacinia.</p>
     </div>
-    <div class="thumbs">
-        <img src="projects/slug/thumbs/1.jpg">
-        <img src="projects/slug/thumbs/2.jpg">
-        <img src="projects/slug/thumbs/3.jpg">
-        <img src="projects/slug/thumbs/4.jpg">
-        <img src="projects/slug/thumbs/5.jpg">
-        <img src="projects/slug/thumbs/6.jpg">
-    </div>
+    <section
+            data-featherlight-gallery
+            data-featherlight-filter="a"
+    >
+        <p>gallery</p>
+        <div class="thumbs">
+            <a href="projects/slug/images/1.jpg"><img src="projects/slug/thumbs/1.jpg"></a>
+            <a href="projects/slug/images/2.jpg"><img src="projects/slug/thumbs/2.jpg"></a>
+            <a href="projects/slug/images/3.jpg"><img src="projects/slug/thumbs/3.jpg"></a>
+            <a href="projects/slug/images/4.jpg"><img src="projects/slug/thumbs/4.jpg"></a>
+            <a href="projects/slug/images/5.jpg"><img src="projects/slug/thumbs/5.jpg"></a>
+            <a href="projects/slug/images/6.jpg"><img src="projects/slug/thumbs/6.jpg"></a>
+        </div>
+    </section>
 
 </div>
 
@@ -64,4 +72,12 @@
     <p>here are some fucking icons</p>
 </footer>
 <!--ALRIGHT THAT'S IT-->
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+
 </body>
