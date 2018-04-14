@@ -134,7 +134,7 @@ section {
     padding: .5em 0;
     margin-top: -2em;
     font-size: 3em;
-    text-transform: lowercase;
+    text-transform: capitalize;
 }
 
 .project h2 {
@@ -142,11 +142,20 @@ section {
     font-style: italic;
     width: 100%;
     padding-bottom: 1em;
+    text-transform: capitalize;
 }
 
 .project h3 {
     font-weight: 400;
     font-size: 1em;
+}
+
+.project h4 {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: .75em;
+    letter-spacing: .05em;
 }
 
 .project p {
@@ -172,7 +181,7 @@ section {
 
 .thumbs img {
     padding: 0 1em 1em 0;
-    width: 200px;
+    width: 235px;
     height: 200px;
 }
 
