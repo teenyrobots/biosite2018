@@ -39,19 +39,30 @@
                 <p>to reach out, u have many avenues. You can an email to joycer at teenyrobots dot net, you can say hi on twitter, or you can use the form below to shoot me a message.</p>
                 <form action="https://formspree.io/joycer@teenyrobots.net"
                       method="POST">
+                    <h1>Say hello!</h1>
                     <div>
                         <label for="name">Name:</label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" id="name" placeholder="Hal Incandenza">
                     </div>
                     <div>
-                        <label for="email">Email:</label>
-                        <input type="email" name="_replyto" id="email">
+                        <label for="email">Email (required):</label>
+                        <input type="email" name="_replyto" id="email" placeholder="hi@enfieldtennisacademy.edu">
                     </div>
-                    <textarea name="message" placeholder="Let's work together!"></textarea>
-                    <input type="submit" value="Send">
+                    <div>
+                        <label for="message">Your message:</label>
+                        <textarea name="message" placeholder="Let's work together!" id="message"></textarea>
+                    </div>
+                    <input type="submit" value="Send" id="sendButton">
                     <input type="hidden" name="_next" value="/contactThanks.html" />
                 </form>
             </div>
         </div>
+
+        <footer>
+            <p>made with care, on the road.</p>
+            <p>Drop me a line at joycer at teenyrobots dot net, or catch up with me in one of these fine places:</p>
+            <p>here are some fucking icons</p>
+        </footer>
+
     </body>
 </html>
