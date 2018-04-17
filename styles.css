@@ -24,6 +24,14 @@ body {
     min-height: 100%;
 }
 
+a {
+    color: #FF6476;
+}
+
+a:hover {
+    color: #C43F4E;
+}
+
 header {
     width: 100%;
     max-width: fit-content;
@@ -65,6 +73,10 @@ header li {
     font-size: 1.15em;
     margin-bottom: .25em;
     padding-bottom: .41em;
+}
+
+header a:hover {
+    color: black;
 }
 
 header a:hover li {
@@ -157,6 +169,16 @@ section {
     border-bottom: 8px #FF6476 solid;
 }
 
+.button {
+    color: white;
+    background-color: #FF6476;
+    padding: .5em;
+    display: inline-block;
+    border-radius: 1em;
+    -moz-border-radius: 1em;
+    margin: 1em 0;
+}
+
 .content {
     width: 95%;
     max-width: 1000px;
@@ -215,12 +237,13 @@ section {
 .project h3 {
     font-weight: 600;
     font-size: 1em;
-    padding: .25em 0;
-    margin: 1em 0 0 0;
-    border-style: none none solid none;
+    margin: 1.5em 0 .25em 0;
     border-width: .05em;
-    color: #FF6476;
-    display: inline-block;
+    color: black;
+}
+
+.project h3:first-of-type {
+    margin: 0;
 }
 
 .hero {
@@ -228,27 +251,65 @@ section {
 }
 
 .copy {
-    width: 500px;
+    width: 400px;
     max-width: 95%;
-    padding-right: 1em;
+    /*padding-right: 2em;*/
+    /*margin-right: 2em;*/
 }
 
+.border {
+    border-style: none solid none none;
+    border-width: 1px;
+    border-color: #5e5e5e;
+    padding-right: 2em;
+    margin-right: 2em;
+}
+
+
 .copy p {
-    padding: .5em 0;
+    margin: 0 0 .5;
+}
+
+.copy ul {
+    margin: .5em 0 0 0;
+    list-style-type: none;
+}
+
+.copy li {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2em;
+}
+
+.copy li img {
+    padding-right: 1em;
 }
 
 .thumbs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 500px;
+    width: 550px;
     max-width: 100%;
-    padding-top: 3em;
+    margin: 3em 0 0 2em;
+    border-style: none none none solid;
+    border-width: 1px;
+    border-color: #5e5e5e;
 }
 
 .thumbs img {
     width: 250px;
+    height: 200px;
     padding: .5em;
+}
+
+.thumbs h4 {
+    width: 100%;
+    margin-left: 2.5em;
+    font-weight: 200;
+    font-style: italic;
+    font-size: .8em;
 }
 
 #intro {
