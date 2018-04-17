@@ -35,7 +35,7 @@
         </header>
         <!--THAT'S IT FOR THE HEADER-->
 
-        <div class="content">
+        <div class="content" id="allProjects">
             <h1>Selected work</h1>
             <hr>
             <div class="projectThumb">
@@ -50,9 +50,6 @@
                 <h3>newsgame</h3>
                 <img src="workThumbs/factitious.jpg">
             </div>
-            <div class="projectThumb">
-                <img src="">
-            </div>
         </div>
 
         <footer>
@@ -60,5 +57,34 @@
             <p>Drop me a line at joycer at teenyrobots dot net, or catch up with me in one of these fine places:</p>
             <p>here are some fucking icons</p>
         </footer>
+
+        <script
+                src='https://code.jquery.com/jquery-3.3.1.min.js'
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+
+        <script>
+
+            function makeCard(project) {
+                var title = project.title,
+                    type = project.type,
+                    thumb = "projects/_thumbs/" + project.slug + ".jpg";
+                var projectDiv = $("<div class='projectThumb'><h2>"+ title +"</h2><h3>"+ type +"</h3><a href='project.html'><img src='"+ thumb +"'></a></div>");
+                return projectDiv;
+            }
+
+
+            $(document).ready(function(){
+                $.getJSON('projects.json', function(data) {
+                    data.projects.map(function(project){
+                        console.log(project.title);
+                        var projectCard = makeCard(project);
+                        $("#allProjects").append(projectCard);
+                    })
+                })
+            })
+
+        </script>
+
     </body>
 </html>
