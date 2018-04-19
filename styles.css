@@ -80,7 +80,7 @@ header a:hover {
 }
 
 header a:hover li {
-    border-bottom: 8px #FF6476 solid;
+    border-bottom: 8px #C43F4E solid;
 }
 
 figcaption {
@@ -244,7 +244,7 @@ section {
     font-weight: 600;
     font-size: 1em;
     margin: 1.5em 0 .25em 0;
-    border-width: .05em;
+    border-width: 1px;
     color: black;
 }
 
@@ -261,14 +261,6 @@ section {
     max-width: 95%;
     /*padding-right: 2em;*/
     /*margin-right: 2em;*/
-}
-
-.border {
-    border-style: none solid none none;
-    border-width: 1px;
-    border-color: #5e5e5e;
-    padding-right: 2em;
-    margin-right: 2em;
 }
 
 .copy p {
