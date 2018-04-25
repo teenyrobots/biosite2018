@@ -64,8 +64,9 @@
             function makeCard(project) {
                 var title = project.title,
                     type = project.type,
-                    thumb = "projects/_thumbs/" + project.slug + ".jpg";
-                var projectDiv = $("<div class='projectThumb'><h2>"+ title +"</h2><h3>"+ type +"</h3><a href='project.html'><img src='"+ thumb +"'></a></div>");
+                    thumb = "projects/_thumbs/" + project.slug + ".jpg",
+                    projectURL = "/project.html?project=" + project.slug;
+                var projectDiv = $("<div class='projectThumb'><h2>"+ title +"</h2><h3>"+ type +"</h3><a href='" + projectURL + "'><img src='"+ thumb +"'></a></div>");
                 return projectDiv;
             }
 

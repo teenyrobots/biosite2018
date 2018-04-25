@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" />
+    <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joyce Rice is a product designer</title>
     <link rel="stylesheet" text="css" href="styles.css">
     <link href="fl/src/featherlight.css" type="text/css" rel="stylesheet" />
@@ -37,8 +37,10 @@
 </header>
 <!--THAT'S IT FOR THE HEADER-->
 
-<img src="projects/slug/hero.jpg" class="hero">
-<div class="project">
+<h1>HI THIS IS THE PROJECT THNX</h1>
+
+<img src=null id="hero">
+<!--<div class="project">
 
     <div class="copy">
         <h1 id="projectName">Project Name</h1>
@@ -65,8 +67,9 @@
             data-featherlight-gallery
             data-featherlight-filter="a"
     >
+   -->
         <!--<h4>gallery</h4>-->
-        <div class="thumbs">
+     <!--   <div class="thumbs">
             <h4>Gallery</h4>
             <a href="projects/slug/images/1.jpg"><img src="projects/slug/thumbs/1.jpg"></a>
             <a href="projects/slug/images/2.jpg"><img src="projects/slug/thumbs/2.jpg"></a>
@@ -78,6 +81,7 @@
     </section>
 
 </div>
+-->
 
 <!--HERE IS THE FOOTER-->
 <footer>
@@ -96,11 +100,37 @@
 
 <script>
 
-    $(document).ready(function(){
-        $.getJSON('projects.json', function(data) {
-            data.projects.map(function(project){
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
 
-            })
+    function makeProject(project) {
+        $('#hero').attr('src', '/projects/'+ project.slug +'/hero.jpg');
+    }
+
+    $(document).ready(function(){
+        var projectSlug = getParameterByName('project');
+
+        $.getJSON('projects.json', function(data) {
+            var allProjects = data.projects;
+
+            for (var x=0; x < allProjects.length; x++) {
+                if (allProjects[x].slug === projectSlug) {
+                    var currentProject = allProjects[x];
+                    var slug = currentProject.slug;
+                    break;
+                }
+            }
+
+            if (currentProject) {
+                makeProject(currentProject)
+            }
         })
     })
 
