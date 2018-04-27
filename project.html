@@ -37,51 +37,29 @@
 </header>
 <!--THAT'S IT FOR THE HEADER-->
 
-<h1>HI THIS IS THE PROJECT THNX</h1>
-
+<!--HERE IS THE PROJECT-->
 <img src=null id="hero">
-<!--<div class="project">
-
-    <div class="copy">
-        <h1 id="projectName">Project Name</h1>
-        <h2 id="projectType">newsgame</h2>
-        <a href="work.html" target="_blank"><div class="button">Play Factitious</div></a>
-        <h3>Client:</h3>
-        <p id="projectClient">AU Game Lab</p>
+<div class="project">
+    <div id="copy">
+        <h1 id="projectName"></h1>
+        <h2 id="projectType"></h2>
+        <a href=null target="_blank" id="projectLink"><div class="button" id="projectButton"></div></a>
         <h3>My roles:</h3>
-        <p id="projectRoles">Game design, UX design, UI design</p>
+        <p id="projectRoles"></p>
         <h3>Brief:</h3>
-        <p id="projectBrief">In the wake of the 2016 election, there was a huge discussion in the journalism community about how readers evaluate truth and trustworthiness in a news outlet. The client was interested in conducting a research project about readers’ ability to identify “truthiness” in a news story, and wanted to get as many plays as possible.</p>
+        <p id="projectBrief"></p>
         <h3>Product:</h3>
-        <p id="projectProduct">Using game design principles, we designed an interface that made news story evaluation fun. Users were presented with a new story, and a Tinder-like swipe mechanic let them designate a story as “real” or “fake” news.</p>
-        <h3>Outcomes:</h3>
-        <p id="projectOutcomes">Factitious was played over 1.6 million times in the first three days it was released and was covered in several major media outlets. The client was able to collect enough data for their own research, as well as ultimately making the core software available as an open source tool for playful polling systems.</p>
-        <h3>Selected Coverage:</h3>
-        <ul>
-            <li><img src="assets/logos/npr.png" id="npr"><a href="https://www.npr.org/sections/ed/2017/07/03/533676536/test-your-fake-news-judgement-play-this-game" target="_blank">To Test Your Fake News Judgment, Play This Game</a></li>
-            <li><img src="assets/logos/newsweek.png" id="newsweek"><a href="http://www.newsweek.com/fake-news-test-donald-trump-thinks-he-can-spot-fact-fiction-can-you-631626">Fake News Test: Donald Trump Thinks He Can Spot Fact From Fiction. Can You?</a></li>
-            <li><img src="assets/logos/thenextweb.png" id="thenextweb"><a href="https://thenextweb.com/shareables/2017/07/17/learn-to-spot-fake-news-with-this-tinder-style-browser-game/">Learn to spot fake news with this Tinder-style browser game</a></li>
-        </ul>
+        <p id="projectProduct"></p>
+        <!--<h3>Selected Coverage:</h3>-->
+        <!--<ul>-->
+            <!--<li><img src="assets/logos/npr.png" id="npr"><a href="https://www.npr.org/sections/ed/2017/07/03/533676536/test-your-fake-news-judgement-play-this-game" target="_blank">To Test Your Fake News Judgment, Play This Game</a></li>-->
+            <!--<li><img src="assets/logos/newsweek.png" id="newsweek"><a href="http://www.newsweek.com/fake-news-test-donald-trump-thinks-he-can-spot-fact-fiction-can-you-631626">Fake News Test: Donald Trump Thinks He Can Spot Fact From Fiction. Can You?</a></li>-->
+            <!--<li><img src="assets/logos/thenextweb.png" id="thenextweb"><a href="https://thenextweb.com/shareables/2017/07/17/learn-to-spot-fake-news-with-this-tinder-style-browser-game/">Learn to spot fake news with this Tinder-style browser game</a></li>-->
+        <!--</ul>-->
     </div>
-    <section
-            data-featherlight-gallery
-            data-featherlight-filter="a"
-    >
-   -->
-        <!--<h4>gallery</h4>-->
-     <!--   <div class="thumbs">
-            <h4>Gallery</h4>
-            <a href="projects/slug/images/1.jpg"><img src="projects/slug/thumbs/1.jpg"></a>
-            <a href="projects/slug/images/2.jpg"><img src="projects/slug/thumbs/2.jpg"></a>
-            <a href="projects/slug/images/3.jpg"><img src="projects/slug/thumbs/3.jpg"></a>
-            <a href="projects/slug/images/4.jpg"><img src="projects/slug/thumbs/4.jpg"></a>
-            <a href="projects/slug/images/5.jpg"><img src="projects/slug/thumbs/5.jpg"></a>
-            <a href="projects/slug/images/6.jpg"><img src="projects/slug/thumbs/6.jpg"></a>
-        </div>
-    </section>
-
 </div>
--->
+<!--OKAY PROJECT IS DONE-->
+
 
 <!--HERE IS THE FOOTER-->
 <footer>
@@ -111,7 +89,28 @@
     }
 
     function makeProject(project) {
+        //Project Info
         $('#hero').attr('src', '/projects/'+ project.slug +'/hero.jpg');
+        $('#projectName').append(project.title);
+        $('#projectType').append(project.type);
+        $('#projectLink').attr('href', project.link);
+        $('#projectButton').append(project.button);
+        if (project.client) $('#projectLink').after('<h3>Client:</h3><p>'+project.client+'</p>');
+        $('#projectRoles').append(project.myRoles);
+        $('#projectBrief').append(project.brief);
+        $('#projectProduct').append(project.product);
+        if (project.outcome) $('#projectProduct').after('<h3>Outcomes:</h3><p>'+project.outcome+'</p>');
+
+        //SELECTED COVERAGE
+
+        //Gallery
+        if (project.images) {
+            $('#copy').after('<section data-featherlight-gallery data-featherlight-filter="a"><div class="thumbs" id="gallery"></div></section>');
+            $('#gallery').append('<h4>Gallery</h4>');
+            for (var x = 1; x <= project.images; x++) {
+                $('#gallery').append('<a href="projects/' + project.slug + '/images/' + x + '.jpg"><img src="projects/' + project.slug + '/thumbs/' + x + '.jpg"></a>');
+            }
+        }
     }
 
     $(document).ready(function(){
@@ -127,7 +126,6 @@
                     break;
                 }
             }
-
             if (currentProject) {
                 makeProject(currentProject)
             }

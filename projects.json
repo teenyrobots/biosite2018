@@ -11,7 +11,18 @@
       "brief": "In the wake of the 2016 election, there was a huge discussion in the journalism community about how readers evaluate truth and trustworthiness in a news outlet. The client was interested in conducting a research project about readers’ ability to identify “truthiness” in a news story, and wanted to get as many plays as possible.",
       "product": "Using game design principles, we designed an interface that made news story evaluation fun. Users were presented with a new story, and a Tinder-like swipe mechanic let them designate a story as “real” or “fake” news.",
       "outcome": "Factitious was played over 1.6 million times in the first three days it was released and was covered in several major media outlets. The client was able to collect enough data for their own research, as well as ultimately making the core software available as an open source tool for playful polling systems.",
-      "images": 6
+      "coverage": {
+        {
+          "outlet": "npr",
+          "link": "https://www.npr.org/sections/ed/2017/07/03/533676536/test-your-fake-news-judgement-play-this-game"
+        },
+        {
+          "outlet": "newsweek",
+          "link": "http://www.newsweek.com/fake-news-test-donald-trump-thinks-he-can-spot-fact-fiction-can-you-631626"
+        },
+
+      }
+      "images": 7
     },
     {
       "slug": "commuter",
@@ -45,11 +56,11 @@
       "type": "Publication",
       "button": "Read Symbolia",
       "link": "https://itunes.apple.com/us/app/symbolia-magazine/id553786080?mt=8",
-      "client": "",
+      "client": null,
       "myRoles": "Cofounder, Creative Director; Experience design, User Interface design, Art direction, Art production",
       "brief": "In 2012, Erin Polgreen invited me to join her new publication, Symbolia, as a cofounder. The project had been funded, but the product had not yet been designed beyond a proposal. The publication would be designed first for the iPad, and then adapted for other devices, and would assign, edit, and publish a new issue every other month.",
       "product": "Symbolia ran bimonthly from 2012 until 2015 and published hundreds of pages of new non-fiction comics from contributors all over the world. It had over 3000 subscribers and on the iOS app store, Kindle Fire store, and as an interactive PDF.",
-      "outcome": "",
+      "outcome": null,
       "images": null
     },
     {
@@ -58,11 +69,11 @@
       "type": "Newsgame",
       "button": "Play Hurl the Harasser",
       "link": "http://hurl.persuasiveplay.org/",
-      "client": "",
+      "client": null,
       "myRoles": "Game design, User Interface design, Art production",
       "brief": "Lindsay Grace, Maggie Farley, and I had 48 hours to develop and produce a news game at the University of Miami news jam. After an hour or so of brainstorming topical concepts, we landed on a game about sexual harassment in the entertainment industry.",
       "product": "In Hurl the Harasser, a harasser stands at one end of a teeter totter. Bubble float onto the screen, which players tap to make the people inside “speak.” As people speak about their experiences, they are freed from their bubbles and land on the teeter-totter. When enough people speak out, the harasser is flung across the screen.",
-      "outcome": "",
+      "outcome": null,
       "images": null
     },
     {
@@ -71,7 +82,7 @@
       "type": "Newsgame",
       "button": "Play Square Off",
       "link": "https://www.polygon.com/a/final-fantasy-7/battle-trivia",
-      "client": "Vox Media / Polygon.com",
+      "client": "Vox Media / Polygon",
       "myRoles": "Game design, User interface design, Programming, Art direction",
       "brief": "The Vox Media Storytelling Studio was working on the design for  Polygon.com’s oral history of Final Fantasy VII. The story, a very long prose piece, would be published on the game’s 20th anniversary. The team was interested in producing a game or playful module as a companion piece.",
       "product": "Square Off is a trivia game about the development, lore, and fan culture of Final Fantasy VII. It uses an interface inspired by the Final Fantasy battle system and includes art inspired by the game. Much of the trivia was culled from the article, so reading the article improved player performance. Codeveloped with Cherisse Datu and Kelli Dunlap.",
@@ -88,7 +99,7 @@
       "myRoles": "Graphic design, data visualization",
       "brief": "For two years, I produced monthly infographics on house and home topics with Bed Bath & Beyond for their blog Above & Beyond. I pitched topics, wrote copy, and designed the final pieces.",
       "product": "A large collection of infographics on an array of house and home topics.",
-      "outcome": "",
+      "outcome": null,
       "images": null
     }
   ]
