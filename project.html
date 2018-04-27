@@ -102,6 +102,14 @@
         if (project.outcome) $('#projectProduct').after('<h3>Outcomes:</h3><p>'+project.outcome+'</p>');
 
         //SELECTED COVERAGE
+        if (project.coverage) {
+            var coverage = project.coverage;
+            $('#copy').append('<h3>Selected Coverage:</h3><ul id="coverageList"></ul>');
+            for (var x=0; x<coverage.length; x++) {
+                console.log(coverage[x].outlet);
+                $('#coverageList').append('<li><img src="assets/logos/' + coverage[x].outlet + '.png"><a href="' + coverage[x].link + '" target="_blank">To Test Your Fake News Judgment, Play This Game</a></li>\n')
+            }
+        }
 
         //Gallery
         if (project.images) {
