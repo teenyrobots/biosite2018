@@ -40,8 +40,9 @@
 <!--HERE IS THE PROJECT-->
 <img src=null id="hero">
 <div class="project">
+    <h1 id="projectName"></h1>
+
     <div id="copy">
-        <h1 id="projectName"></h1>
         <h2 id="projectType"></h2>
         <a href=null target="_blank" id="projectLink"><div class="button" id="projectButton"></div></a>
         <h3>My roles:</h3>
@@ -107,7 +108,7 @@
             $('#copy').append('<h3>Selected Coverage:</h3><ul id="coverageList"></ul>');
             for (var x=0; x<coverage.length; x++) {
                 console.log(coverage[x].outlet);
-                $('#coverageList').append('<li><img src="assets/logos/' + coverage[x].outlet + '.png"><a href="' + coverage[x].link + '" target="_blank">To Test Your Fake News Judgment, Play This Game</a></li>\n')
+                $('#coverageList').append('<li><img src="assets/logos/' + coverage[x].outlet + '.png"><a href="' + coverage[x].link + '" target="_blank">' + coverage[x].title + '</a></li>\n')
             }
         }
 

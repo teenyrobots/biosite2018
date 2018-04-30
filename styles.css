@@ -29,7 +29,7 @@ a {
 }
 
 a:hover {
-    color: #C43F4E;
+    color: #DD001A;
 }
 
 header {
@@ -80,7 +80,7 @@ header a:hover {
 }
 
 header a:hover li {
-    border-bottom: 8px #C43F4E solid;
+    border-bottom: 8px #DD001A solid;
 }
 
 figcaption {
@@ -179,6 +179,10 @@ section {
     margin: 1em 0;
 }
 
+a:hover .button {
+    background-color: #DD001A;
+}
+
 .content {
     width: 95%;
     max-width: 1000px;
@@ -187,7 +191,6 @@ section {
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
-    /*background-color: red;*/
 }
 
 .content img {
@@ -215,7 +218,7 @@ section {
 }
 
 .project {
-    width: 1000px;
+    width: 950px;
     max-width: 95%;
     display: flex;
     margin: auto;
@@ -290,7 +293,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    width: 400px;
+    width: 460px;
     max-width: 100%;
     margin: 3em 0 0 2em;
     padding-left: 1.5em;
@@ -333,6 +336,10 @@ section {
     position: relative;
 }
 
+.projectThumb a:hover {
+    border-bottom: 10px #FF6476 solid;
+}
+
 .projectThumb img {
     width: 100%;
     margin: auto;
@@ -344,7 +351,6 @@ section {
     position: absolute;
     left: .25em;
 }
-
 
 .projectThumb h3 {
     font-weight: 200;

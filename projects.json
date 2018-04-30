@@ -1,5 +1,3 @@
-// A JSON object containing data about all of Joyce Rice's portfolio projects
-
 {
   "projects": [
     {
@@ -33,6 +31,20 @@
       "images": 7
     },
     {
+      "slug": "cca",
+      "title": "Digital Comics Anthology",
+      "type": "Web app",
+      "button": "View the anthology",
+      "link": "http://comics.cca.edu/",
+      "client": "California College of the Arts",
+      "myRoles": "Web app design",
+      "brief": "Client was looking for a cohesive, visually interesting way to organize a large, disparate body of student work. This project was a ground-up redesign from a starter-site established during the beginning of their program. The final product would stand as the web centerpiece for the Comics MFA program at CCA.",
+      "product": "The digital anthology organizes comics by student and has a linkable section for each class. It sits on a backdrop of random student work, styled to align with CCA’s brand. Each comic has a unique URLs so graduated students can link to their work. We took a data-based approach when redesigning this web-app. Using a central data structure, the directory, student pages, and comic backgrounds are dynamically generated. As a result, the anthology is simple to update as new cohorts graduate.",
+      "outcome": null,
+      "coverage": null,
+      "images": 5
+    },
+    {
       "slug": "commuter",
       "title": "Commuter Challenge",
       "type": "Newsgame",
@@ -44,19 +56,6 @@
       "product": "Journalist Maggie Farley conducted interviews at high traffic train stations, and from those interview we crafted an interactive narrative around a low-income parent trying to get to work and daycare pickups on time. Players navigate service delays, a short-tempered boss, and daycare late fees, trying to get through the week without going into debt or getting fired.",
       "outcome": "Commuter Challenge brought over 6,000 new users to the client’s site, and was covered in major media outlets.",
       "coverage": null,
-      "images": 6
-    },
-    {
-      "slug": "cca",
-      "title": "Digital Comics Anthology",
-      "type": "Web app",
-      "button": "View the anthology",
-      "link": "http://comics.cca.edu/",
-      "client": "California College of the Arts",
-      "myRoles": "Web app design",
-      "brief": "Client was looking for a cohesive, visually interesting way to organize a large, disparate body of student work. The final product would stand as the web centerpiece for the Comics MFA program at CCA.",
-      "product": "",
-      "outcome": "",
       "images": 6
     },
     {
