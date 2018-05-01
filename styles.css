@@ -84,10 +84,11 @@ header a:hover li {
 }
 
 figcaption {
-    font-style: italic;
+    /*font-style: italic;*/
     font-size: .75em;
-    text-align: right;
+    text-align: left;
     color: #707070;
+    margin-left: .5em;
 }
 
 hr {

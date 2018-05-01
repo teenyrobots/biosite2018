@@ -5,8 +5,7 @@
     <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joyce Rice is a product designer</title>
     <link rel="stylesheet" text="css" href="styles.css">
-    <link href="fl/src/featherlight.css" type="text/css" rel="stylesheet" />
-    <link href="fl/src/featherlight.gallery.css" type="text/css" rel="stylesheet" />
+    <link href="sl/dist/simpleLightbox.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,400,400i, 600" rel="stylesheet">
 </head>
 
@@ -51,12 +50,6 @@
         <p id="projectBrief"></p>
         <h3>Product:</h3>
         <p id="projectProduct"></p>
-        <!--<h3>Selected Coverage:</h3>-->
-        <!--<ul>-->
-            <!--<li><img src="assets/logos/npr.png" id="npr"><a href="https://www.npr.org/sections/ed/2017/07/03/533676536/test-your-fake-news-judgement-play-this-game" target="_blank">To Test Your Fake News Judgment, Play This Game</a></li>-->
-            <!--<li><img src="assets/logos/newsweek.png" id="newsweek"><a href="http://www.newsweek.com/fake-news-test-donald-trump-thinks-he-can-spot-fact-fiction-can-you-631626">Fake News Test: Donald Trump Thinks He Can Spot Fact From Fiction. Can You?</a></li>-->
-            <!--<li><img src="assets/logos/thenextweb.png" id="thenextweb"><a href="https://thenextweb.com/shareables/2017/07/17/learn-to-spot-fake-news-with-this-tinder-style-browser-game/">Learn to spot fake news with this Tinder-style browser game</a></li>-->
-        <!--</ul>-->
     </div>
 </div>
 <!--OKAY PROJECT IS DONE-->
@@ -74,8 +67,7 @@
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-<script src="fl/src/featherlight.js" type="text/javascript" charset="utf-8"></script>
-<script src="fl/src/featherlight.gallery.js" type="text/javascript" charset="utf-8"></script>
+<script src="sl/dist/simpleLightbox.js" type="text/javascript" charset="utf-8"></script>
 
 <script>
 
@@ -114,11 +106,12 @@
 
         //Gallery
         if (project.images) {
-            $('#copy').after('<section data-featherlight-gallery data-featherlight-filter="a"><div class="thumbs" id="gallery"></div></section>');
+            $('#copy').after('<div class="thumbs" id="gallery"></div>');
             $('#gallery').append('<h4>Gallery</h4>');
             for (var x = 1; x <= project.images; x++) {
                 $('#gallery').append('<a href="projects/' + project.slug + '/images/' + x + '.jpg"><img src="projects/' + project.slug + '/thumbs/' + x + '.jpg"></a>');
             }
+            $('#gallery a').simpleLightbox();
         }
     }
 
