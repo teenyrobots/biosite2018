@@ -28,7 +28,15 @@
           "title": "Learn to spot fake news with this Tinder-style browser game"
         }
       ],
-      "images": 7
+      "images": [
+          "Splash page",
+          "Articles drop in from the top",
+          "Swipe left for fake or right for news",
+          "User interface",
+          "Reports available on the backend",
+          "Alternate colorways",
+          "Early sketches"
+      ]
     },
     {
       "slug": "cca",
@@ -42,7 +50,57 @@
       "product": "The digital anthology organizes comics by student and has a linkable section for each class. It sits on a backdrop of random student work, styled to align with CCA’s brand. Each comic has a unique URLs so graduated students can link to their work. We took a data-based approach when redesigning this web-app. Using a central data structure, the directory, student pages, and comic backgrounds are dynamically generated. As a result, the anthology is simple to update as new cohorts graduate.",
       "outcome": null,
       "coverage": null,
-      "images": 5
+      "images": [
+        "",
+        "Student work directory",
+        "Student thesis page",
+        "Thesis footer",
+        "Mobile site"
+      ]
+    },
+    {
+      "slug": "symbolia",
+      "title": "Symbolia Magazine",
+      "type": "Publication",
+      "button": "Read Symbolia",
+      "link": "https://itunes.apple.com/us/app/symbolia-magazine/id553786080?mt=8",
+      "client": null,
+      "myRoles": "Cofounder, Creative Director; Experience design, User Interface design, Art direction, Art production",
+      "brief": "In 2012, Erin Polgreen invited me to join her new publication, Symbolia, as a cofounder. The project had been funded, but the product had not yet been designed beyond a proposal. The publication would be designed first for the iPad, and then adapted for other devices, and would assign, edit, and publish a new issue every other month.",
+      "product": "Symbolia ran bimonthly from 2012 until 2015 and published hundreds of pages of new non-fiction comics from contributors all over the world. It had over 3000 subscribers and on the iOS app store, Kindle Fire store, and as an interactive PDF.",
+      "outcome": null,
+      "coverage": [
+        {
+          "outlet": "huffpo",
+          "link": "https://www.huffingtonpost.com/2012/12/04/symbolia-tablet-magazine-_n_2235422.html",
+          "title": "Symbolia, Tablet Magazine, Brings Graphic Novel Style To Investigative Journalism"
+        },
+        {
+          "outlet": "fastco",
+          "link": "https://www.fastcompany.com/1682043/symbolia-tablet-magazine-aims-to-turn-news-into-a-comic",
+          "title": "Symbolia Tablet Magazine Aims To Turn News Into A Comic"
+        },
+        {
+          "outlet": "mtv",
+          "link": "http://www.mtv.com/news/2627385/symbolia-pdf/",
+          "title": "The Next Step of Comics Journalism with 'Symbolia'"
+        },
+        {
+          "outlet": "cjr",
+          "link": "https://archives.cjr.org/the_news_frontier/symbolia.php",
+          "title": "Hello to Symbolia: New iPad-only comics journalism magazine launches today"
+        }
+      ],
+      "images": [
+        "Symbolia was designed for iPad",
+        "Each issue ran 5-6 stories",
+        "Letter from the Creative Director",
+        "Letter from the Editor",
+        "Symbolia's editorial process",
+        "Symbolia sunsetted after 13 issues",
+        "",
+        ""
+      ]
     },
     {
       "slug": "commuter",
@@ -57,20 +115,6 @@
       "outcome": "Commuter Challenge brought over 6,000 new users to the client’s site, and was covered in major media outlets.",
       "coverage": null,
       "images": 6
-    },
-    {
-      "slug": "symbolia",
-      "title": "Symbolia Magazine",
-      "type": "Publication",
-      "button": "Read Symbolia",
-      "link": "https://itunes.apple.com/us/app/symbolia-magazine/id553786080?mt=8",
-      "client": null,
-      "myRoles": "Cofounder, Creative Director; Experience design, User Interface design, Art direction, Art production",
-      "brief": "In 2012, Erin Polgreen invited me to join her new publication, Symbolia, as a cofounder. The project had been funded, but the product had not yet been designed beyond a proposal. The publication would be designed first for the iPad, and then adapted for other devices, and would assign, edit, and publish a new issue every other month.",
-      "product": "Symbolia ran bimonthly from 2012 until 2015 and published hundreds of pages of new non-fiction comics from contributors all over the world. It had over 3000 subscribers and on the iOS app store, Kindle Fire store, and as an interactive PDF.",
-      "outcome": null,
-      "coverage": null,
-      "images": null
     },
     {
       "slug": "hurl",

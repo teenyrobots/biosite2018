@@ -106,10 +106,12 @@
 
         //Gallery
         if (project.images) {
+            var allImages = project.images;
             $('#copy').after('<div class="thumbs" id="gallery"></div>');
             $('#gallery').append('<h4>Gallery</h4>');
-            for (var x = 1; x <= project.images; x++) {
-                $('#gallery').append('<a href="projects/' + project.slug + '/images/' + x + '.jpg"><img src="projects/' + project.slug + '/thumbs/' + x + '.jpg"></a>');
+            for (var x = 0; x < allImages.length; x++) {
+                console.log(allImages[x]);
+                $('#gallery').append('<a href="projects/' + project.slug + '/images/' + x + '.jpg" title="' + allImages[x] + '"><img src="projects/' + project.slug + '/thumbs/' + x + '.jpg"></a>');
             }
             $('#gallery a').simpleLightbox();
         }

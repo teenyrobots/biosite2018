@@ -194,10 +194,10 @@ a:hover .button {
     justify-content: center;
 }
 
-.content img {
-    padding-right: 1em;
-    margin-bottom: 1em;
-}
+/*.content img {*/
+    /*padding-right: 1em;*/
+    /*margin-bottom: 1em;*/
+/*}*/
 
 .content h1 {
     width: 100%;
@@ -287,6 +287,7 @@ a:hover .button {
 
 #copy li img {
     padding-right: 1em;
+    padding-top: .25em;
     width: 120px;
 }
 
@@ -345,19 +346,18 @@ a:hover .button {
     width: 100%;
     margin: auto;
     margin-top: 2em;
-    padding: .5em;
 }
 
 .projectThumb h2 {
     position: absolute;
-    left: .25em;
+    left: 0em;
 }
 
 .projectThumb h3 {
     font-weight: 200;
     font-style: italic;
     position: absolute;
-    right: .5em;
+    right: 0;
     top: .3em;
 }
 
