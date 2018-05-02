@@ -111,10 +111,34 @@
       "client": "WAMU, Washington DC’s NPR affiliate",
       "myRoles": "Game design, UI/UX design, Art Direction",
       "brief": "When the local transit authority announced a complete train service overhaul, the client saw an opportunity to cover their transportation beat in a new way. As a companion piece to their new podcast, they wanted to produce a digital experience showing how the transit disruption was affecting low-income residents with little job flexibility.",
-      "product": "Journalist Maggie Farley conducted interviews at high traffic train stations, and from those interview we crafted an interactive narrative around a low-income parent trying to get to work and daycare pickups on time. Players navigate service delays, a short-tempered boss, and daycare late fees, trying to get through the week without going into debt or getting fired.",
-      "outcome": "Commuter Challenge brought over 6,000 new users to the client’s site, and was covered in major media outlets.",
-      "coverage": null,
-      "images": 6
+      "product": "Journalist Maggie Farley conducted interviews at high traffic train stations, and from those interview we crafted an interactive narrative around a low-income parent trying to get to work and daycare pickups on time. Players navigate service delays, a short-tempered boss, and daycare late fees, trying to get through the week without going into debt or getting fired. The game was illustrated by Sarah Winifred Searle.",
+      "outcome": "Commuter Challenge brought over 6,000 new users to the client’s site. Local players praised the game for raising awareness about their struggle commuting in Washington DC.",
+      "coverage": [
+        {
+          "outlet": "citylab",
+          "link": "https://www.citylab.com/transportation/2017/01/can-your-budget-and-job-survive-the-washington-metro/514992/",
+          "title": "Can Your Budget and Job Survive the Washington Metro?"
+        },
+        {
+          "outlet": "technically",
+          "link": "https://technical.ly/dc/2017/02/03/wamu-commuter-challenge-game/",
+          "title": "WAMU made a game about commuting in DC and it’s so stressful"
+        },
+        {
+          "outlet": "ggwash",
+          "link": "https://ggwash.org/view/62220/try-to-get-to-work-on-time-in-this-great-commuting-game-from-wamu",
+          "title": "Try to get to work on time in this great commuting “game” from WAMU"
+        }
+      ],
+      "images": [
+        "",
+        "Players balance time and money",
+        "Being late can result in firing",
+        "Based on real DC transit disasters",
+        "Narrative as well as time choices",
+        "Built in open-source tool Twine",
+        ""
+      ]
     },
     {
       "slug": "hurl",
@@ -124,11 +148,17 @@
       "link": "http://hurl.persuasiveplay.org/",
       "client": null,
       "myRoles": "Game design, User Interface design, Art production",
-      "brief": "Lindsay Grace, Maggie Farley, and I had 48 hours to develop and produce a news game at the University of Miami news jam. After an hour or so of brainstorming topical concepts, we landed on a game about sexual harassment in the entertainment industry.",
+      "brief": "Lindsay Grace, Maggie Farley, and I had 36 hours to develop and produce a news game at the University of Miami Newsjam. After an hour or so of brainstorming topical concepts, we landed on a game about sexual harassment in the entertainment industry.",
       "product": "In Hurl the Harasser, a harasser stands at one end of a teeter totter. Bubble float onto the screen, which players tap to make the people inside “speak.” As people speak about their experiences, they are freed from their bubbles and land on the teeter-totter. When enough people speak out, the harasser is flung across the screen.",
       "outcome": null,
       "coverage": null,
-      "images": null
+      "images": [
+        "Built with the newscycle",
+        "Harasser sits at one end",
+        "Tap the people to free them",
+        "Harasser can silence you",
+        "Critical mass hurls the harasser"
+      ]
     },
     {
       "slug": "square",

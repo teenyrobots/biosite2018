@@ -87,7 +87,7 @@
         $('#projectName').append(project.title);
         $('#projectType').append(project.type);
         $('#projectLink').attr('href', project.link);
-        $('#projectButton').append(project.button);
+        if (project.button) $('#projectButton').append(project.button);
         if (project.client) $('#projectLink').after('<h3>Client:</h3><p>'+project.client+'</p>');
         $('#projectRoles').append(project.myRoles);
         $('#projectBrief').append(project.brief);

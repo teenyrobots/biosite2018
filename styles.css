@@ -79,6 +79,10 @@ header a:hover {
     color: black;
 }
 
+header a:hover h1 {
+    background-color: #DD001A;
+}
+
 header a:hover li {
     border-bottom: 8px #DD001A solid;
 }
