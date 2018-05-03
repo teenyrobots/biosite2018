@@ -39,6 +39,10 @@
             <hr style="margin-bottom:0">
             <h1>Selected work</h1>
             <hr>
+            <div id="wrong">
+                <img src="assets/error.jpg" alt="a drunk laptop surrounded by empty booze bottles">
+                <p>Whoops something's gone wrong! Try refreshing the page.</p>
+            </div>
             <!--<div class="projectThumb">-->
                 <!--<h2>ONA16</h2>-->
                 <!--<h3>collateral</h3>-->
@@ -72,11 +76,14 @@
 
 
             $(document).ready(function(){
+                var errorDiv = true;
                 $.getJSON('projects.json', function(data) {
                     data.projects.map(function(project){
                         var projectCard = makeCard(project);
                         $("#allProjects").append(projectCard);
+                        errorDiv = false;
                     })
+                    if (errorDiv) $('#wrong').show();
                 })
             })
 

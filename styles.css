@@ -335,6 +335,7 @@ a:hover .button {
     max-width: 100%;
 }
 
+/* Work.html */
 .projectThumb {
     display: block;
     margin: 1em auto;
@@ -365,6 +366,14 @@ a:hover .button {
     top: .3em;
 }
 
+#wrong {
+    display: none;
+    margin: 3em;
+    width: 1000px;
+    text-align: center;
+}
+
+/* about.html */
 .biopic {
     width: 300px;
     padding-top: .5em;

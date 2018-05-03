@@ -171,22 +171,43 @@
       "brief": "The Vox Media Storytelling Studio was working on the design for  Polygon.com’s oral history of Final Fantasy VII. The story, a very long prose piece, would be published on the game’s 20th anniversary. The team was interested in producing a game or playful module as a companion piece.",
       "product": "Square Off is a trivia game about the development, lore, and fan culture of Final Fantasy VII. It uses an interface inspired by the Final Fantasy battle system and includes art inspired by the game. Much of the trivia was culled from the article, so reading the article improved player performance. Codeveloped with Cherisse Datu and Kelli Dunlap.",
       "outcome": "On the day of publication, Square Off was the top page hit on Polygon.com (after the homepage). About 44 percent of readers clicked through from the story about Final Fantasy 7 to play the related game. ",
-      "coverage": null,
-      "images": null
+      "coverage": [
+        {
+          "outlet": "storystudio",
+          "link": "https://storytelling.voxmedia.com/2017/1/30/14372688/gaming-for-news",
+          "title": "Gaming for news: What is it and why do we believe it can be important?"
+        }
+      ],
+      "images": [
+        "Square ran on Polygon.com",
+        "Players choose a trivia topic",
+        "FFVII inspired 'battle' system",
+        "Prompt to read article at the end",
+        "",
+        "Initial project sketch",
+        "First brainstorming session"
+      ]
     },
     {
-      "slug": "above",
+      "slug": "bbb",
       "title": "Above & Beyond",
       "type": "Infographics",
       "button": "Read infographics",
       "link": "https://blog.bedbathandbeyond.com/author/joyce-rice/",
       "client": "Bed Bath & Beyond",
       "myRoles": "Graphic design, data visualization",
-      "brief": "For two years, I produced monthly infographics on house and home topics with Bed Bath & Beyond for their blog Above & Beyond. I pitched topics, wrote copy, and designed the final pieces.",
-      "product": "A large collection of infographics on an array of house and home topics.",
+      "brief": "As part of their overall content strategy, client was interested in producing regular graphic content that would be relevant to their customers. These graphics would be published on their blog, Above & Beyond, and across social media channels with the goal of driving traffic to their online store.",
+      "product": "Over two years I designed dozens of graphics on various home and life style topics including kitchen tools, interior decorating, and holiday history.",
       "coverage": null,
       "outcome": null,
-      "images": null
+      "images": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     }
   ]
 }
