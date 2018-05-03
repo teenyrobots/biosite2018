@@ -204,15 +204,17 @@ a:hover .button {
 /*}*/
 
 .content h1 {
-    width: 100%;
     margin: auto;
-}
-
-#allProjects h1 {
     width: 94%;
     text-align: center;
     margin-bottom: .1em;
 }
+
+/*#allProjects h1 {*/
+    /*width: 94%;*/
+    /*text-align: center;*/
+    /*margin-bottom: .1em;*/
+/*}*/
 
 .content hr{
     width: 94%;
