@@ -266,23 +266,23 @@ a:hover .button {
     width: 100%;
 }
 
-#copy {
+.copy {
     width: 450px;
     max-width: 95%;
     /*padding-right: 2em;*/
     /*margin-right: 2em;*/
 }
 
-#copy p {
-    margin: 0 0 .5;
+.copy p {
+    margin: 0 0 .5em;
 }
 
-#copy ul {
+.copy ul {
     margin: .5em 0 0 0;
     list-style-type: none;
 }
 
-#copy li {
+.copy li {
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-start;
@@ -291,7 +291,7 @@ a:hover .button {
     margin-bottom: 2em;
 }
 
-#copy li img {
+.copy li img {
     padding-right: 1em;
     padding-top: .25em;
     width: 120px;
@@ -324,12 +324,13 @@ a:hover .button {
     font-size: .8em;
 }
 
+/*intro.html*/
 #intro {
     width: 100%;
     max-width: 850px;
 }
 
-#intro * {
+#intro div, img {
     display: block;
     margin: auto;
     width: 375px;
@@ -379,6 +380,7 @@ a:hover .button {
 .biopic {
     width: 300px;
     padding-top: .5em;
+    padding-right: 1em;
 }
 
 @media only screen and (max-width: 1052px) {
