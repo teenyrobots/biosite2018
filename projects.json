@@ -208,6 +208,24 @@
         "",
         ""
       ]
+    },
+    {
+      "slug": "ona",
+      "title": "ONA Conferences",
+      "type": "Event branding",
+      "button": null,
+      "link": null,
+      "client": "Online News Association",
+      "myRoles": "Collateral design, event branding",
+      "brief": "Client organizes an annual conference around digital news and media. The conference is held in a new city each year, and they produce an entirely new city-themed brand identity for each event.",
+      "product": "For the last three years, I’ve designed and illustrated the assets for booklets, schedules, maps, t-shirts, tote-bags, and more.",
+      "coverage": null,
+      "outcome": null,
+      "images": [
+        "2017, ONA DC",
+        "2016, ONA Denver",
+        "2016, finals and process"
+      ]
     }
   ]
 }

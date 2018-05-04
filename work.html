@@ -56,8 +56,9 @@
             <h1>Comics</h1>
             <hr>
             <div class="projectThumb">
-                <h2>Journalism</h2>
                 <a href="project.html">
+                <h2>Journalism</h2>
+
                     <img src="workThumbs/ona.jpg">
                 </a>
             </div>
@@ -87,7 +88,7 @@
                     type = project.type,
                     thumb = "projects/_thumbs/" + project.slug + ".jpg",
                     projectURL = "/project.html?project=" + project.slug;
-                var projectDiv = $("<div class='projectThumb'><h2>"+ title +"</h2><h3>"+ type +"</h3><a href='" + projectURL + "'><img src='"+ thumb +"'></a></div>");
+                var projectDiv = $("<div class='projectThumb'><a href='" + projectURL + "'><h2>"+ title +"</h2><h3>"+ type +"</h3><img src='"+ thumb +"'></a></div>");
                 return projectDiv;
             }
 
