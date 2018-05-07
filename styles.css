@@ -383,6 +383,27 @@ a:hover .button {
     padding-right: 1em;
 }
 
+/*journalism.html*/
+.comicThumb {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.comicThumb img {
+    width: 100%;
+    max-width: 475px;
+}
+
+.comicThumb div {
+    width: 100%;
+    max-width: 400px;
+    height: 75px;
+    margin-top: 65px;
+}
+
 @media only screen and (max-width: 1052px) {
     .thumbs {
         padding-top: 1em;
