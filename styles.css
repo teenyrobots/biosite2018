@@ -216,9 +216,110 @@ a:hover .button {
     text-align: left;
 }
 
+
+
+.thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 460px;
+    max-width: 100%;
+    margin: 3em 0 0 2em;
+    padding-left: 1.5em;
+    border-style: none none none solid;
+    border-width: 1px;
+    border-color: #5e5e5e;
+}
+
+.thumbs img {
+    width: 200px;
+    height: 150px;
+    margin: 1em .5em 0;
+}
+
+.thumbs h4 {
+    width: 100%;
+    margin-left: 1em;
+    font-weight: 200;
+    font-style: italic;
+    font-size: .8em;
+}
+
+
+/*intro.html*/
+#intro {
+    width: 100%;
+    max-width: 850px;
+}
+
+#intro div, img {
+    display: block;
+    margin: auto;
+    width: 375px;
+    padding: .25em;
+    max-width: 100%;
+}
+
+
+/* about.html */
+.biopic {
+    width: 300px;
+    padding-top: .5em;
+    padding-right: 1em;
+}
+
+
+/* Work.html */
+.projectThumb {
+    display: block;
+    margin: 1em auto;
+    width: 450px;
+    position: relative;
+}
+
+.projectThumb a {
+    color: black;
+}
+
+.projectThumb a:hover {
+    color: #FF6476;
+}
+
+.projectThumb img {
+    width: 100%;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.projectThumb a:hover img {
+    opacity: .85;
+}
+
+.projectThumb h2 {
+    position: absolute;
+    left: .25em;
+}
+
+.projectThumb h3 {
+    font-weight: 200;
+    font-style: italic;
+    position: absolute;
+    right: .25em;
+    top: .3em;
+}
+
+#wrong {
+    display: none;
+    margin: 3em;
+    width: 1000px;
+    text-align: center;
+}
+
+
+/*project.html*/
 .project {
-    width: 950px;
-    max-width: 95%;
+    max-width: 950px;
+    width: 95%;
     display: flex;
     margin: auto;
     flex-wrap: wrap;
@@ -289,103 +390,9 @@ a:hover .button {
     width: 120px;
 }
 
-.thumbs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    width: 460px;
-    max-width: 100%;
-    margin: 3em 0 0 2em;
-    padding-left: 1.5em;
-    border-style: none none none solid;
-    border-width: 1px;
-    border-color: #5e5e5e;
-}
-
-.thumbs img {
-    width: 200px;
-    height: 150px;
-    margin: 1em .5em 0;
-}
-
-.thumbs h4 {
-    width: 100%;
-    margin-left: 1em;
-    font-weight: 200;
-    font-style: italic;
-    font-size: .8em;
-}
-
-/*intro.html*/
-#intro {
-    width: 100%;
-    max-width: 850px;
-}
-
-#intro div, img {
-    display: block;
-    margin: auto;
-    width: 375px;
-    padding: .25em;
-    max-width: 100%;
-}
-
-/* Work.html */
-.projectThumb {
-    display: block;
-    margin: 1em auto;
-    width: 450px;
-    position: relative;
-}
-
-.projectThumb a {
-    color: black;
-}
-
-.projectThumb a:hover {
-    color: #FF6476;
-}
-
-.projectThumb img {
-    width: 100%;
-    margin: auto;
-    margin-top: 2em;
-}
-
-.projectThumb a:hover img {
-    opacity: .85;
-}
-
-.projectThumb h2 {
-    position: absolute;
-    left: .25em;
-}
-
-.projectThumb h3 {
-    font-weight: 200;
-    font-style: italic;
-    position: absolute;
-    right: .25em;
-    top: .3em;
-}
-
-#wrong {
-    display: none;
-    margin: 3em;
-    width: 1000px;
-    text-align: center;
-}
-
-/* about.html */
-.biopic {
-    width: 300px;
-    padding-top: .5em;
-    padding-right: 1em;
-}
-
 /*journalism.html*/
 .comicThumb {
-    width: 1000px;
+    width: 850px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -394,15 +401,72 @@ a:hover .button {
 
 .comicThumb img {
     width: 100%;
-    max-width: 475px;
+    max-width: 500px;
+    padding: .5em .5em .5em 0;
 }
 
 .comicThumb div {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     height: 75px;
     margin-top: 65px;
+    padding: .5em;
 }
+
+.comicProject {
+    max-width: 850px;
+    width: 95%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.comicProject h1 {
+    color: white;
+    padding: .5em 0;
+    margin-top: -2em;
+    font-size: 3em;
+    text-transform: capitalize;
+    font-weight:600;
+    width: 100%;
+}
+
+.comicProject h2 {
+    font-weight:400;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.comicProject h3 {
+    font-weight: 600;
+    font-size: 1em;
+    margin: .5em 0;
+    margin-bottom: 1.25em;
+    border-width: 1px;
+    color: black;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.comicProject a {
+    background-color: #FF6476;
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+}
+
+.comicProject p {
+    margin: 1em;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+}
+
 
 @media only screen and (max-width: 1052px) {
     .thumbs {
