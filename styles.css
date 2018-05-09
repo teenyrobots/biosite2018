@@ -411,7 +411,7 @@ a:hover .button {
     width: 100%;
     max-width: 350px;
     /*height: 75px;*/
-    /*margin-top: 30px;*/
+    margin-top: .5em;
     padding: 0 .5em;
 }
 
