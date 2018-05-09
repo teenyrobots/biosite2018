@@ -34,9 +34,9 @@ a:hover {
 
 header {
     width: 100%;
-    max-width: fit-content;
-    display: block;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 2em;
     color: #707070;
 }
@@ -62,11 +62,12 @@ header h1 {
 
 header h2 {
     padding-bottom: .2em;
-    font-weight:600;
+    font-weight: 600;
 }
 
 header ul {
     list-style-type: none;
+    margin-top: 1.25em;
 }
 
 header li {
@@ -471,5 +472,22 @@ a:hover .button {
 @media only screen and (max-width: 1052px) {
     .thumbs {
         padding-top: 1em;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    header li {
+        margin: .5em;
+    }
+
+    header ul {
+        margin-top: 0;
+    }
+
+    header h1, h2 {
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin: 0 1em;
     }
 }
