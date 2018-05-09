@@ -398,6 +398,7 @@ a:hover .button {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 2em;
 }
 
 .comicThumb img {
@@ -409,9 +410,14 @@ a:hover .button {
 .comicThumb div {
     width: 100%;
     max-width: 350px;
-    height: 75px;
-    margin-top: 65px;
-    padding: .5em;
+    /*height: 75px;*/
+    /*margin-top: 30px;*/
+    padding: 0 .5em;
+}
+
+.comicThumb h2 {
+    margin: 0;
+    text-align: left;
 }
 
 .comicProject {
@@ -459,6 +465,7 @@ a:hover .button {
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
     border-radius: 1em;
+    margin-left: -.2em;
 }
 
 .comicProject p {
@@ -489,5 +496,11 @@ a:hover .button {
         margin: auto;
         text-align: center;
         margin: 0 1em;
+    }
+}
+
+@media only screen and (max-width: 895px) {
+    .comicThumb div {
+        max-width: 500px;
     }
 }
