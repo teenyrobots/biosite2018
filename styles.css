@@ -37,7 +37,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     color: #707070;
 }
 
@@ -174,7 +174,7 @@ section {
     display: inline-block;
     border-radius: 1em;
     -moz-border-radius: 1em;
-    margin: 1em 0;
+    margin: 1em 0 1.5em 0;
 }
 
 a:hover .button {
@@ -266,7 +266,9 @@ a:hover .button {
 .biopic {
     width: 300px;
     padding-top: .5em;
-    padding-right: 1em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    margin: 0;
 }
 
 
@@ -342,6 +344,8 @@ a:hover .button {
     font-weight:200;
     text-transform: capitalize;
     width: 100%;
+    text-align: left;
+    margin-left: 0;
 }
 
 .project h3 {
@@ -358,6 +362,7 @@ a:hover .button {
 
 #hero {
     width: 100%;
+    /*min-height: 200px;*/
 }
 
 .copy {
@@ -497,10 +502,21 @@ a:hover .button {
         text-align: center;
         margin: 0 1em;
     }
+
+    .project h1 {
+        font-size: 2.5em;
+        margin-bottom: -1em;
+    }
 }
 
 @media only screen and (max-width: 895px) {
     .comicThumb div {
         max-width: 500px;
+    }
+
+    .project h1 {
+        font-size: 2.5em;
+        margin-bottom: -.5em;
+        width: 95%;
     }
 }
