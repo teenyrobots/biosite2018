@@ -261,6 +261,11 @@ a:hover .button {
     max-width: 100%;
 }
 
+#intro h1, p {
+    margin-left: 0;
+    margin-bottom: 1em;
+}
+
 
 /* about.html */
 .biopic {
@@ -318,6 +323,10 @@ a:hover .button {
     text-align: center;
 }
 
+#comics {
+    margin-bottom: 3em;
+}
+
 
 /*project.html*/
 .project {
@@ -372,8 +381,8 @@ a:hover .button {
     /*margin-right: 2em;*/
 }
 
-.copy p {
-    margin: 0 0 .5em;
+.copy p, h2 {
+    margin: 0 0 1em;
 }
 
 .copy ul {
@@ -478,6 +487,12 @@ a:hover .button {
     font-style: italic;
     font-weight: 200;
     text-align: center;
+}
+
+/* contact.html */
+#contact h1 {
+    text-align: left;
+    margin-left: 0;
 }
 
 
