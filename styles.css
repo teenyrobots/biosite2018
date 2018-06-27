@@ -375,6 +375,41 @@ a:hover .button {
     /*min-height: 200px;*/
 }
 
+#hero2 {
+    width: 100%;
+    height: 25vw;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+#hero2 img {
+    width: 100%;
+    height: 25vw;
+    position: absolute;
+}
+
+#hero2 .overlay {
+    width: 100%;
+    height: 25vw;
+    position: absolute;
+    background: linear-gradient(rgba(255,0,0,0) 15%, rgba(0,0,0,1) 75%);
+    opacity: .6;
+}
+
+#hero2 .title {
+    width: 95%;
+    max-width: 850px;
+    display: block;
+    margin: auto;
+}
+
+#hero2 h1 {
+    color: white;
+    position: absolute;
+    bottom: .25em;
+}
+
 .copy {
     width: 450px;
     max-width: 95%;
