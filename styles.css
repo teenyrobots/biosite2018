@@ -33,8 +33,9 @@ a:hover {
 }
 
 header {
-    width: 100%;
+    width: 95%;
     display: flex;
+    margin: auto;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 1em;
@@ -74,6 +75,8 @@ header li {
     font-size: 1.15em;
     margin-bottom: .25em;
     padding-bottom: .41em;
+    margin-right: 0;
+    margin-left: 2em;
 }
 
 header a:hover {
@@ -94,8 +97,8 @@ hr {
 
 form {
     background-color: #E0E0E0;
-    padding: .75em;
-    margin-top: 1em;
+    padding: 1em;
+    margin: 1em;
 }
 
 form div {
@@ -193,11 +196,6 @@ section {
     justify-content: center;
 }
 
-.content img {
-    width: 95%;
-    max-width: 900px;
-}
-
 .content h1 {
     margin: auto;
     width: 94%;
@@ -207,10 +205,6 @@ section {
 
 .content hr{
     width: 94%;
-}
-
-#intro h1 {
-    text-align: left;
 }
 
 .thumbs {
@@ -243,13 +237,15 @@ section {
 
 /*intro.html*/
 #intro {
-    width: 100%;
+    width: 95%;
     max-width: 850px;
+    margin-top: 2em;
+    text-align: left;
 }
 
 #intro div, img {
     display: block;
-    margin: auto;
+    margin: 1em;
     width: 375px;
     padding: .25em;
     max-width: 100%;
@@ -259,7 +255,6 @@ section {
     margin-left: 0;
     margin-bottom: 1em;
 }
-
 
 /* about.html */
 .biopic {
@@ -367,6 +362,7 @@ section {
 #hero {
     width: 100%;
     /*min-height: 200px;*/
+    margin: 0;
 }
 
 #hero2 {
@@ -452,6 +448,7 @@ section {
     width: 100%;
     max-width: 500px;
     padding: .5em .5em .5em 0;
+    margin: 0;
 }
 
 .comicThumb div {
@@ -524,6 +521,11 @@ section {
     text-align: center;
 }
 
+.comicPage {
+    width: 95%;
+    max-width: 900px;
+}
+
 /* contact.html */
 #contact h1 {
     text-align: left;
@@ -531,9 +533,37 @@ section {
 }
 
 
-@media only screen and (max-width: 1052px) {
+@media only screen and (max-width: 957px) {
     .thumbs {
-        padding-top: 1em;
+        padding: 1em 0 0 0;
+        border-style: solid none none none;
+        margin: auto;
+    }
+}
+
+
+
+@media only screen and (max-width: 895px) {
+    .comicThumb div {
+        max-width: 500px;
+    }
+
+    .project h1 {
+        font-size: 2.5em;
+        margin-bottom: -.5em;
+        width: 95%;
+    }
+
+    header h2 {
+        margin: 1em;
+    }
+
+    header li {
+        margin: 1em;
+    }
+
+    #intro img {
+        margin: auto;
     }
 }
 
@@ -554,7 +584,6 @@ section {
     }
 
     .project h1 {
-        font-size: 2.5em;
         margin-bottom: -1em;
     }
 
@@ -563,16 +592,24 @@ section {
         opacity: .7;
     }
 
-}
-
-@media only screen and (max-width: 895px) {
-    .comicThumb div {
-        max-width: 500px;
+    .thumbs {
+        justify-content: center;
+        text-align: center;
     }
 
-    .project h1 {
-        font-size: 2.5em;
-        margin-bottom: -.5em;
-        width: 95%;
+    .thumbs img {
+        display: block;
+        margin: 1em;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    header li {
+        font-size: 1em;
+    }
+
+    #hero2 h1 {
+        font-size: 2em;
     }
 }
