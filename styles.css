@@ -298,9 +298,10 @@ section {
 .cv h3 {
     background-color: #FF6476;
     color: white;
-    padding: .25em;
+    padding: .25em .5em;
     font-weight: 300;
     margin: 1.5em 0 .5em;
+    display: table;
 }
 
 .cv h3 + h4 {
@@ -313,7 +314,17 @@ section {
 
 .cv ul {
     list-style: disc outside none;
-    padding-left: 1em;
+    padding-left: 1.5em;
+}
+
+.cvNav {
+    margin: 1em auto;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .cvBlock {
