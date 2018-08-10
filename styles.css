@@ -42,7 +42,7 @@ header {
     color: #707070;
 }
 
-header h2, ul, li {
+header h2, header ul, header li {
     display: inline-block;
     margin: 1em;
 }
@@ -207,6 +207,24 @@ section {
     width: 94%;
 }
 
+.content2 {
+    width: 95%;
+    max-width: 1000px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.content2 h1 {
+    margin: auto;
+    width: 94%;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: .5em;
+}
+
 .thumbs {
     display: flex;
     flex-wrap: wrap;
@@ -243,7 +261,7 @@ section {
     text-align: left;
 }
 
-#intro div, img {
+#intro div, #intro img {
     display: block;
     margin: 1em;
     width: 375px;
@@ -251,7 +269,7 @@ section {
     max-width: 100%;
 }
 
-#intro h1, p {
+#intro h1, #intro p {
     margin-left: 0;
     margin-bottom: 1em;
 }
@@ -264,6 +282,42 @@ section {
     padding-bottom: 2em;
     margin: 0;
     margin-top: 1.5em;
+}
+
+.cv {
+    width: 95%;
+    max-width: 725px;
+    margin: auto;
+}
+
+.cv h1, .cv h2 {
+    margin: .5em 0;
+    padding: 0;
+}
+
+.cv h3 {
+    background-color: #FF6476;
+    color: white;
+    padding: .25em;
+    font-weight: 300;
+    margin: 1.5em 0 .5em;
+}
+
+.cv h3 + h4 {
+    margin-top: 0;
+}
+
+.cv h4 {
+    margin-top: 1em;
+}
+
+.cv ul {
+    list-style: disc outside none;
+    padding-left: 1em;
+}
+
+.cvBlock {
+    display: block;
 }
 
 
@@ -316,6 +370,13 @@ section {
 #comics {
     margin-bottom: 3em;
 }
+
+/*#coverageList li {*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+/*}*/
 
 
 /*project.html*/
@@ -410,7 +471,7 @@ section {
     /*margin-right: 2em;*/
 }
 
-.copy p, h2 {
+.copy p, .copy h2 {
     margin: 0 0 1em;
 }
 
@@ -422,10 +483,9 @@ section {
 .copy li {
     display: flex;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: center;
     padding: 0;
-    margin: auto;
-    margin-bottom: 2em;
+    margin: 1.5em auto;
 }
 
 .copy li img {
@@ -577,7 +637,7 @@ section {
         margin-top: 0;
     }
 
-    header h1, h2 {
+    header h1, header h2 {
         display: block;
         margin: auto;
         text-align: center;
