@@ -70,6 +70,8 @@ header h2 {
 header ul {
     list-style-type: none;
     margin-top: 1.25em;
+    margin-right: 0;
+    margin-left: 3.25em;
 }
 
 header li {
@@ -615,6 +617,11 @@ section {
         border-style: solid none none none;
         margin: auto;
     }
+
+    header ul {
+        margin: 1em 0;
+    }
+
 }
 
 
@@ -647,10 +654,6 @@ section {
 @media only screen and (max-width: 425px) {
     header li {
         margin: .5em;
-    }
-
-    header ul {
-        margin-top: 0;
     }
 
     header h1, h2 {
